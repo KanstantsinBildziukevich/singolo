@@ -40,11 +40,18 @@
 
 html {
     font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     width: 1020px;
     margin: 0 auto;
+    padding: 0;
+}
+
+.first-screen {
+    margin-bottom: -60px;
 }
 
 .header {
@@ -84,7 +91,7 @@ nav {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin: 4px 0 0 -4px;
+    margin: 6px 0 0 -4px;
     padding: 0;   
 }
 
@@ -99,7 +106,7 @@ nav {
 }
 
 .menu a:hover {
-    color:red;
+    color:#FF0000;
 }
 
 .dotted_list:not(:first-child)::before {
@@ -247,4 +254,340 @@ nav {
 .bottom_line {
     height: 6px;
     background-color: #FFFFFF;
+}
+
+.wrapper {
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.inner-wrapper {
+    margin: 0 40px;
+}
+
+.description {
+    letter-spacing: 0;
+    word-spacing: -0.075em;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #767E9E;
+  }
+  
+  .portfolio {
+    background-color: #2D303A;
+    padding-bottom: 47px;
+    border-bottom: 6px solid #323746;
+  }
+  
+  .title_portfolio-about {
+    margin: 0;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.001em;
+    word-spacing: -0.1em;
+    color: #666D89;
+    text-transform: capitalize;
+    padding-top: 60px;
+  }
+  
+  .portfolio-labels {
+    margin: -4px 0 10px;
+    font-weight: normal;
+    font-size: 12px;
+    color: #767E9E;
+  }
+  
+  .portfolio-labels span {
+    font-size: 12px;
+    color: #767E9E;
+    border: 1px solid #767E9E;
+    border-radius: 6px;
+    padding: 3px 5px;
+    margin-right: 11px;
+  }
+  
+  span.checked {
+    color: #DEDEDE;
+    border: 1px solid #DEDEDE;
+    padding: 3px 6px 3px 7px;
+  }
+  
+  .portfolio-labels span:hover {
+    color: #DEDEDE;
+    border: 1px solid #DEDEDE;
+    cursor: pointer;
+  }
+  
+  .portfolio-gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 0;
+    grid-auto-columns: 0;
+    overflow: hidden;
+    justify-content: center;
+    grid-gap: 17px;
+    margin-top: 22px;
+  }
+  
+  .title_about_us {
+    margin: 0;
+    font-weight: 900;
+    font-size: 30px;
+    letter-spacing: 0.01em;
+    word-spacing: -0.1em;
+    color: #666D89;
+    text-transform: capitalize;
+  }
+  
+  .about_us {
+    padding: 60px 0 63px;
+    background-color: #F2F2F2;
+    border-bottom: 6px solid #FFFFFF;
+  }
+  
+  .about_us-description {
+    margin: 19px 0 0;
+  }
+  
+  
+  .three-column-layout {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 10px;
+    margin-top: 44px;
+    justify-content: space-between;
+  }
+  
+  .about_us-people {
+    width: 300px;
+  }
+  
+  .desmond {
+    position: relative;
+    left: -1px;
+  }
+  
+  .about_us-name {
+    margin: 0;
+    margin-top: 8px;
+    font-weight: 900;
+    font-size: 18px;
+    color: #666D89;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+  
+  }
+  
+  .small-text {
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #767E9E;
+  }
+  
+  .about_us-bio {
+    margin-top: 8px;
+  }
+  
+  .about_us-social {
+    margin-top: 22px;
+  }
+  
+  .about_us-social img {
+    border-radius: 50%;
+    margin-right: 1px;
+    transition: transform 0.8s ease-out;
+  }
+  
+  .about_us-social img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background-color: #F7D5A8
+  }
+
+  .main-block {
+    width: 1020px;
+    margin: 0 auto;
+}
+  
+.get-a-quote {
+    background-color: #F06C64;
+    padding: 56px 40px 12px;
+    border-bottom: 8px solid #EA676B;
+}
+  
+.contact-quote {
+    margin: 0;
+    font-weight: 900;
+    font-size: 30px;
+    text-transform: none;
+    color: #F0D8D9;
+    letter-spacing: -0.002em;
+    word-spacing: 0;
+}
+  
+.contact-description {
+    letter-spacing: 0;
+    word-spacing: -0.075em;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;
+    text-align: justify;
+    color: #F0D8D9;
+}
+  
+.contact-block {
+    display: flex;
+    margin-top: 43px;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+}
+  
+.contact-form input,
+textarea {
+    border: 2px solid #D6564F;
+    border-radius: 5px;
+    padding: 10px 13px;
+    background-color: #D6564F;
+    width: 590px;
+    letter-spacing: 0.05em;
+    color: #F0D8D9;
+}
+
+textarea:focus, input:focus {
+    color: #F0D8D9;
+}
+  
+aside {
+    margin-left: 20px;
+}
+  
+.contact-title {
+    margin-top: -2px;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #F0D8D9;
+}
+  
+.contact-form input::placeholder,
+textarea::placeholder {
+    color: #F48C8F;
+}
+  
+.contact-form input {
+    display: block;
+    margin-bottom: 17px;
+}
+  
+input:invalid {
+    border: 2px solid #FF0000;
+}
+  
+textarea {
+    color: #F0D8D9;
+    height: 178px;
+    resize: none;
+}
+
+input.contact-send-button {
+    width: 100px;
+    align-self: flex-end;
+    margin: 10px 0 0;
+}
+
+.small-text {
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+    color: #767E9E;
+}
+
+.contact-small-text {
+    color: #F0D8D9;
+    font-size: 11px;
+    line-height: 1.95;
+    margin-top: -7px;
+    word-spacing: -0.14em;
+    letter-spacing: 0.05em;
+}
+
+.contact-small-text a {
+    text-decoration: none;
+    color: #F0D8D9;
+}
+
+.contact-small-text a:hover {
+    text-decoration: underline;
+    color: #1B14CC;
+}
+
+.contact-data {
+    margin-top: 23px;
+}
+
+.contact-img-container {
+    width: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-img-container img {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-data-elem {
+    display: flex;
+    align-items: center;
+}
+
+.contact-data-elem p {
+    margin: 0 0 0 11px;
+}
+
+.contact-data-elem:last-child {
+    margin-top: 1px;
+}
+  
+.input-text {
+    font-size: 11px;
+}
+  
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 40px 18px 41px;
+    background: #2D303A;
+}
+
+.footer-copyright {
+    margin: 0;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    color: #666D89;
+}
+  
+.footer-social img {
+    padding: 0;
+    border-radius: 50%;
+    margin-right: 1px;
+    transition: transform 0.8s ease-out;
+}
+  
+.footer-social img:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background-color: #F56E6E
 }
