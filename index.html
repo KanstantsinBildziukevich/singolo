@@ -8,27 +8,27 @@
 </head>
 <body>
     <div class="first-screen">
-        <header class="header">
+        <header id="home" class="header">
             <div class="header_content">
                 <h1 class="logo">
                     SINGOLO<span>*</span>
                 </h1>
                 <nav>
-                    <ul class="menu">
+                    <ul id="menu" class="menu">
                         <li class="dotted_list">
-                            <a id="menu_home" href='#'>Home</a>
+                            <a id="menu_home" href='#home'>Home</a>
                         </li>
                         <li class="dotted_list">
-                            <a id="menu_services" href='#'>Servises</a>
+                            <a id="menu_services" href='#services'>Servises</a>
                         </li>
                         <li class="dotted_list">
-                            <a id="menu_portfolio" href='#'>Portfolio</a>
+                            <a id="menu_portfolio" href='#portfolio'>Portfolio</a>
                         </li>
                         <li class="dotted_list">
-                            <a href='#'>About</a>
+                            <a href='#about'>About</a>
                         </li>
                         <li class="dotted_list">
-                            <a href='#'>Contact</a> 
+                            <a href='#contact'>Contact</a> 
                         </li>
                     </ul>
                 </nav>
@@ -38,15 +38,26 @@
         <main>
             <section class="slider">
                 <div class="slider_content">
-                    <img class="slider_left-arrow slider_arrow" src="assets/images/arrow_to_the_left.png" alt="arrow to the left">
-                    <img class="slider_vertical-phone" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical"> 
-                    <img class="slider_horizontal-phone" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal">   
-                    <img class="slider_right-arrow slider_arrow" src="assets/images/arrow_to_the_right.png" alt="arrow to the right">
+                    <img id="arrow-left" class="slider_left-arrow slider_arrow" src="assets/images/arrow_to_the_left.png" alt="arrow to the left">
+                    <div id="slider-images" class="slider-images">
+                        <div id="first-pic" class="slider-pic-container">
+                            <img id="phone-vertical" class="slider_vertical-phone" src="assets/images/iPhone Vertical.png" alt="iPhone Vertical"> 
+                            <img id="screen-vertical" src="assets/images/Screen-vert.png"  alt="">
+                            <div class="first-pic-click"></div>
+                            <img id="phone-horizontal" class="slider_horizontal-phone" src="assets/images/iPhone Horizontal.png" alt="iPhone Horizontal">   
+                            <img id="screen-horizontal" src="assets/images/Screen-hor.png"  alt="">
+                            <div class="second-pic-click"></div>
+                        </div>
+                        <div id="second-pic" class="slider-pic-container">
+                            <img src="assets/images/Group%202.png"  alt="">
+                        </div>
+                    </div>
+                    <img id="arrow-right" class="slider_right-arrow slider_arrow" src="assets/images/arrow_to_the_right.png" alt="arrow to the right">
                 </div>
             </section>
             <div class="slider_small-height">
             </div>
-            <section class="services">
+            <section id="services" class="services">
                 <h2 class="services_title">Our Services</h2>
                 <p class="services_description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="services_grid">
@@ -111,7 +122,7 @@
         </main>
     </div>
     <div class="wrapper">
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="inner-wrapper">
                 <article class="portfolio-about">
                     <h2 class="title_portfolio-about">Portfolio</h2>
@@ -121,27 +132,27 @@
                     <p class="portfolio-labels">
                     <span class="checked">All</span><span>Web Design</span><span>Graphic Design</span><span>Artwork</span>
                     </p>
-                    <div class="portfolio-gallery">
-                        <img src="./assets/images/boat.png" alt="" width="224" height="190">
-                        <img src="./assets/images/girl.png" alt="" width="224" height="190">
-                        <img src="./assets/images/town.png" alt="" width="224" height="190">
-                        <img src="./assets/images/robot.png" alt="" width="224" height="190">
-                        <img src="./assets/images/spongebob.png" alt="" width="224" height="190"> 
-                        <img src="./assets/images/sdk.png" alt="" width="224" height="190">
-                        <img src="./assets/images/spore.png" alt="" width="224" height="190">
-                        <img src="./assets/images/chicken.png" alt="" width="224" height="190">
-                        <img src="./assets/images/troll.png" alt="" width="224" height="190">
-                        <img src="./assets/images/video.png" alt="" width="224" height="190">
-                        <img src="./assets/images/monster.png" alt="" width="224" height="190">
-                        <img src="./assets/images/radio.png" alt="" width="224" height="190">
-                        <img src="./assets/images/video.png" alt="" width="224" height="190">
-                        <img src="./assets/images/monster.png" alt="" width="224" height="190">
-                        <img src="./assets/images/radio.png" alt="" width="224" height="190">
+                    <div id="gallery-container">
+                        <img id="gallery-border" src="assets/images/gallery-border.png" alt="">
+                        <div class="portfolio-gallery">
+                            <img src="./assets/images/boat.png" alt="" width="224" height="190">
+                            <img src="./assets/images/girl.png" alt="" width="224" height="190">
+                            <img src="./assets/images/town.png" alt="" width="224" height="190">
+                            <img src="./assets/images/robot.png" alt="" width="224" height="190">
+                            <img src="./assets/images/spongebob.png" alt="" width="224" height="190"> 
+                            <img src="./assets/images/sdk.png" alt="" width="224" height="190">
+                            <img src="./assets/images/spore.png" alt="" width="224" height="190">
+                            <img src="./assets/images/chicken.png" alt="" width="224" height="190">
+                            <img src="./assets/images/troll.png" alt="" width="224" height="190">
+                            <img src="./assets/images/video.png" alt="" width="224" height="190">
+                            <img src="./assets/images/monster.png" alt="" width="224" height="190">
+                            <img src="./assets/images/radio.png" alt="" width="224" height="190">
+                        </div>
                     </div>
-                    </article>
+                </article>
             </div>
         </section>
-        <section class="about_us">
+        <section id="about" class="about_us">
             <div class="inner-wrapper">
                 <article class="about_us-about">
                     <h2 class="title_about_us">About Us</h2>
@@ -196,7 +207,7 @@
         </section>
     </div>
     <div class="main-block">
-        <section class="get-a-quote">
+        <section id="contact" class="get-a-quote">
             <article class="contact-about">
                 <h2 class="contact-quote">Get a Quote</h2>
                 <p class="contact-description">
@@ -210,8 +221,8 @@
                     <label>
                         <input class="input-text" type="text" placeholder="Name (Required)" required />
                         <input class="input-text" type="email" placeholder="Email (Required)" required />
-                        <input class="input-text" type="text" placeholder="Subject">
-                        <textarea class="input-text" res placeholder="Describe your project in detail..."></textarea>
+                        <input id="subject" class="input-text" type="text" placeholder="Subject">
+                        <textarea id="description-project" class="input-text" res placeholder="Describe your project in detail..."></textarea>
                     </label>
                     <input class="contact-send-button" type="submit" value="Submit">
                 </form>
@@ -257,5 +268,6 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

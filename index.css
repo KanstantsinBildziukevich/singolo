@@ -121,12 +121,80 @@ nav {
 .slider {
     height: 595px;
     background-color: #F06C64;
+    transition: background-color 0.4s ease-out;
 }
 
-.slider_small-height {
+.slider-images {
+    position: relative;
+    display: flex;
+    width: 797px;
+    height: 600px;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: none;
+    padding-top: 50px;
+    transition: margin-left 0.2s ease-out;
+}
+
+.slider-pic-container {
+    position: relative;
+    transition: margin-left 0.2s ease-out;
+    width: 797px;
+    height: 513px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+}
+
+.slider-pic-container img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen-horizontal {
+    display: none;
+    position: absolute;
+    top: 146px;
+    left: 370px;
+}
+
+#screen-vertical {
+    display: none;
+    position: absolute;
+    top: 77px;
+    left: 11px;
+}
+
+#first-pic {
+    display: flex;
+    align-items: center;
+}
+
+.first-pic-click {
+    width: 216px;
+    height: 458px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+    border-radius: 25px;
+}
+  
+.second-pic-click {
+    width: 458px;
+    height: 216px;
+    position: absolute;
+    top: 135px;
+    left: 313px;
+    border-radius: 25px;
+}
+  
+
+/*.slider_small-height {
     background-color: #EA676B;
     height:5px;
-}
+}*/
 
 .slider_content {
     height: 595px;
@@ -154,14 +222,14 @@ nav {
 
 .slider_vertical-phone {
     position: absolute;
-    bottom: 32px;
-    left: 107px;
+    bottom: -10px;
+    right: 215px;
 }
 
 .slider_horizontal-phone {
     position: absolute;
-    top: 69px;
-    right: 82px; 
+    top: 30px;
+    left: 246px;
 }
 
 .services {
@@ -273,15 +341,15 @@ nav {
     line-height: 1.7;
     text-align: justify;
     color: #767E9E;
-  }
+}
   
-  .portfolio {
+.portfolio {
     background-color: #2D303A;
     padding-bottom: 47px;
     border-bottom: 6px solid #323746;
-  }
+}
   
-  .title_portfolio-about {
+.title_portfolio-about {
     margin: 0;
     font-weight: 900;
     font-size: 30px;
@@ -290,37 +358,46 @@ nav {
     color: #666D89;
     text-transform: capitalize;
     padding-top: 60px;
-  }
-  
-  .portfolio-labels {
+}
+
+.portfolio-labels {
     margin: -4px 0 10px;
     font-weight: normal;
     font-size: 12px;
     color: #767E9E;
-  }
-  
-  .portfolio-labels span {
+}
+
+.portfolio-labels span {
     font-size: 12px;
     color: #767E9E;
     border: 1px solid #767E9E;
     border-radius: 6px;
     padding: 3px 5px;
     margin-right: 11px;
-  }
-  
-  span.checked {
+}
+
+span.checked {
     color: #DEDEDE;
     border: 1px solid #DEDEDE;
     padding: 3px 6px 3px 7px;
-  }
+}
+
+#gallery-container {
+    position: relative;
+}
   
-  .portfolio-labels span:hover {
+#gallery-border {
+    position: absolute;
+    display: none;
+}
+
+.portfolio-labels span:hover {
     color: #DEDEDE;
     border: 1px solid #DEDEDE;
     cursor: pointer;
-  }
-  
-  .portfolio-gallery {
+}
+
+.portfolio-gallery {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(4, 1fr);
@@ -330,9 +407,9 @@ nav {
     justify-content: center;
     grid-gap: 17px;
     margin-top: 22px;
-  }
-  
-  .title_about_us {
+}
+
+.title_about_us {
     margin: 0;
     font-weight: 900;
     font-size: 30px;
@@ -340,37 +417,37 @@ nav {
     word-spacing: -0.1em;
     color: #666D89;
     text-transform: capitalize;
-  }
-  
-  .about_us {
+}
+
+.about_us {
     padding: 60px 0 63px;
     background-color: #F2F2F2;
     border-bottom: 6px solid #FFFFFF;
-  }
-  
-  .about_us-description {
+}
+
+.about_us-description {
     margin: 19px 0 0;
-  }
-  
-  
-  .three-column-layout {
+}
+
+
+.three-column-layout {
     display: grid;
     grid-template-columns: 33% 33% 33%;
     grid-column-gap: 10px;
     margin-top: 44px;
     justify-content: space-between;
-  }
-  
-  .about_us-people {
+}
+
+.about_us-people {
     width: 300px;
-  }
-  
-  .desmond {
+}
+
+.desmond {
     position: relative;
     left: -1px;
-  }
-  
-  .about_us-name {
+}
+
+.about_us-name {
     margin: 0;
     margin-top: 8px;
     font-weight: 900;
@@ -380,37 +457,37 @@ nav {
     white-space: nowrap;
     text-overflow: ellipsis;
     text-transform: capitalize;
-  
-  }
-  
-  .small-text {
+
+}
+
+.small-text {
     font-size: 12px;
     line-height: 1.8;
     text-align: justify;
     color: #767E9E;
-  }
-  
-  .about_us-bio {
+}
+
+.about_us-bio {
     margin-top: 8px;
-  }
-  
-  .about_us-social {
+}
+
+.about_us-social {
     margin-top: 22px;
-  }
-  
-  .about_us-social img {
+}
+
+.about_us-social img {
     border-radius: 50%;
     margin-right: 1px;
     transition: transform 0.8s ease-out;
-  }
-  
-  .about_us-social img:hover {
+}
+
+.about_us-social img:hover {
     cursor: pointer;
     transform: rotate(360deg);
     background-color: #F7D5A8
-  }
+}
 
-  .main-block {
+.main-block {
     width: 1020px;
     margin: 0 auto;
 }
@@ -503,6 +580,7 @@ input.contact-send-button {
     width: 100px;
     align-self: flex-end;
     margin: 10px 0 0;
+    cursor: pointer;
 }
 
 .small-text {
